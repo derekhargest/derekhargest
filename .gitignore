@@ -18,3 +18,4 @@
 ._wp-signup.php
 ._wp-config-sample.php
 /wp-content/themes/derekhargest/.sass-cache
+._.gitignore
