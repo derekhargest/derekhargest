@@ -15,6 +15,8 @@
 	<meta name="viewport" content="width=device-width">
 	<link rel="profile" href="http://gmpg.org/xfn/11">
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
+	<link href="http://fonts.googleapis.com/css?family=Vollkorn:400,700,400italic,700italic|Oswald:400,300,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 	<!--[if lt IE 9]>
 	<script src="<?php echo esc_url( get_template_directory_uri() ); ?>/js/html5.js"></script>
 	<![endif]-->
@@ -22,3 +24,22 @@
 </head>
 
 <body <?php body_class(); ?>>
+	<header>
+		<div class="container">
+			<div class="header-title">
+				<p>Derek Hargest <br /> Front End Web Developer</p>
+			</div> 
+			<div class="logo-container">
+				<div class="logo">
+					<h1>DH</h1>
+				</div>
+			</div>
+			<nav class="main-navigation">
+				<ul>
+					<li class="menu-item"><a href="#">About</a></li>
+					<li class="menu-item"><a href="#">Portfolio</a></li>
+					<li class="menu-item"><a href="#">Resume</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>

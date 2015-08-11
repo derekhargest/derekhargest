@@ -1,0 +1,21 @@
+body,
+button,
+input,
+select,
+textarea {
+	color: #333;
+	font-family: $f-stack-serif;
+	font-size: 16px;
+	line-height: 1.6;
+}
+
+h1, h2{
+	font-family: $f-stack-sans;
+}
+
+h3{
+	font-family: $f-stack-serif;
+	font-size: 24px;
+	font-weight: 200;
+	letter-spacing: 1.15px;
+}

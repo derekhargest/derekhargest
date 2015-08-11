@@ -1,1 +1,23 @@
+@import "compass";
+
+// Variables 
 @import "vars";
+
+@import "theme_info";
+
+// Screen
+// ======
+
+@import "grids";
+
+// Base 
+@import "base/normalize";
+
+@import "base/typography";
+
+// Layouts
+
+@import "layouts/base";
+
+@import "layouts/header";
+@import "layouts/home";

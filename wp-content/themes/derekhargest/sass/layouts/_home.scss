@@ -1,0 +1,58 @@
+.home-content{
+	margin-top: 90px;
+}
+
+.home-content .blurb{
+	 width: span(10); 
+	margin: 0 auto;
+	h2{
+		font-size: 48px;
+		text-align: center;
+		font-weight: 400;
+		margin: 0;
+	}
+	p{
+		text-align: center;
+		font-size: 21px;
+		font-style: italic;
+		letter-spacing: .75px;
+		line-height: 37px;
+		text-rendering: geometricPrecision;
+		margin-top: 30px;
+	}
+}
+
+.home-expierence{
+	margin-top: 60px;
+	.platform-item{
+		@include span(4 of 12);
+		float: left;
+		margin-top: 30px;
+		margin-bottom: 30px;
+		&.last{
+			@include span(4 of 12 last);
+		}
+	}
+	h3, h4{
+		text-align: center;
+	}
+	h4{
+		font-weight: 200;
+		font-size: 24px;
+	}
+	a{
+		display: block;
+		width: 100%;
+		text-align: center;
+	}
+	i{
+		font-size: 135px;
+		color: $c-black;
+	}
+	p{
+		text-align: center;
+		width: 70%;
+		margin: 0 auto; 
+		letter-spacing: .75px;
+	}
+}

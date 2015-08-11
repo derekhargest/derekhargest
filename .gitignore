@@ -19,3 +19,13 @@
 ._wp-config-sample.php
 /wp-content/themes/derekhargest/.sass-cache
 ._.gitignore
+wp-content/themes/derekhargest/._header.php
+wp-content/themes/derekhargest/._config.rb
+wp-content/themes/derekhargest/sass/.__vars.scss
+wp-content/themes/derekhargest/sass/._style.scss
+wp-content/themes/derekhargest/sass/.__theme_info.scss
+wp-content/themes/derekhargest/sass/layouts/.__header.scss
+wp-content/themes/derekhargest/sass/layouts/.__base.scss
+wp-content/themes/derekhargest/sass/layouts/.__home.scss
+wp-content/themes/derekhargest/sass/base/.__normalize.scss
+wp-content/themes/derekhargest/sass/base/.__typography.scss
