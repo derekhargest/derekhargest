@@ -45,12 +45,12 @@
 	margin-top: 60px;
 	float: left;
 	.platform-item{
-		@include span(4 of 12);
+		@include span(5 of 15);
 		float: left;
 		margin-top: 30px;
 		margin-bottom: 30px;
 		&.last{
-			@include span(4 of 12 last);
+			@include span(5 of 15 last);
 		}
 	}
 	h3, h5{

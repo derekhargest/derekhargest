@@ -1,0 +1,59 @@
+.container.portfolio{
+	
+}
+
+.page-title{
+	padding-top: 20px;
+}
+
+.page-content{
+	background: $c-light-gray;
+}
+
+.p-side{
+	@include span(1 of 15);
+	&.last{
+		@include span(1 of 15 last);
+	}
+}
+
+.p-image{
+	@include span(5 of 15);
+	img{
+		width: 100%;
+	}
+}
+
+.p-info{
+	@include span(7 of 15);
+}
+
+.p-item{
+	padding-top: 64px;
+	padding-bottom: 60px;
+	float: left;
+	h2{
+		margin-top: -8px;
+		font-family: $f-stack-serif;
+		font-size: 24px;
+		font-weight: 200;
+		letter-spacing: 1.25px;
+	}
+	h3{
+		font-size: 16px;
+		font-style: italic;
+	}
+	p{
+		font-size: 17px;
+		letter-spacing: 1.5px;
+	}
+	ul{
+		padding-left: 0px;
+	}
+	li{
+		font-size: 15px;
+		letter-spacing: 1.5px;
+		list-style: none;
+		padding-left: none;
+	}
+}

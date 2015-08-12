@@ -30,16 +30,15 @@
 				<p>Derek Hargest <br /> Front End Web Developer</p>
 			</div> 
 			<div class="logo-container">
-				<div class="logo">
-					<h1>DH</h1>
-				</div>
+				<a href="<?php echo site_url(); ?>">
+					<div class="logo">
+						<h1>DH</h1>
+					</div>
+				</a>
 			</div>
+			
 			<nav class="main-navigation">
-				<ul>
-					<li class="menu-item"><a href="#">About</a></li>
-					<li class="menu-item"><a href="#">Portfolio</a></li>
-					<li class="menu-item"><a href="#">Resume</a></li>
-				</ul>
+				<?php wp_nav_menu( array( 'theme_location' => 'header-menu' ) ); ?>
 			</nav>
 		</div>
 	</header>

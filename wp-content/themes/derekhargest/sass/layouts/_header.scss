@@ -26,6 +26,10 @@ header{
 		top: 14px;
 		width: 100%;
 		margin: 0 auto;
+		color: $c-white;
+	}
+	a{
+		color: $c-white;
 	}
 }
 
@@ -51,7 +55,7 @@ header{
 	ul{
 		float: left;
 		padding-left: 0px;
-		li.menu-item{
+		li{
 			display: inline;
 			float: left;
 			margin-right: 40px;
@@ -62,6 +66,7 @@ header{
 				font-weight: 200;
 				text-decoration: none;
 				font-size: 18px;
+				-webkit-font-smoothing: antialiased;
 			}
 		}
 	}
