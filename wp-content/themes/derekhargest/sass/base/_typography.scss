@@ -19,3 +19,44 @@ h3{
 	font-weight: 200;
 	letter-spacing: 1.15px;
 }
+
+h4{
+	font-family: $f-stack-sans;
+	font-weight: 200;
+	font-size: 20px;
+	text-transform: uppercase;
+}
+
+h5{
+	font-family: $f-stack-sans;
+	font-weight: 200;
+	font-size: 20px;
+	text-transform: uppercase;
+}
+
+p, a{
+	letter-spacing: .75px;
+}
+
+a{
+	text-align: underline;
+	color: $c-black;
+	letter-spacing: .5px;
+}
+
+.subtitle{
+	text-align: right;
+	border-bottom: 1px solid $c-black;
+	margin-bottom: 40px;
+	font-size: 20px;
+	padding-bottom: 10px;
+	font-weight: 200;
+	text-transform: none;
+}
+
+.more-link{
+	letter-spacing: 0px;
+	font-weight: 200;
+	font-style: italic;
+	font-size: 1.25em;
+}

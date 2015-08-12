@@ -11,6 +11,10 @@
 ?>
 
 <?php wp_footer(); ?>
-
+<div class="footer">
+	<div class="container">
+		Created by: Derek Hargest
+	</div>
+</div>
 </body>
 </html>

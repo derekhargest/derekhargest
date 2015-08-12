@@ -22,8 +22,28 @@
 	}
 }
 
+.home-examples{
+	margin: 90px 0px;
+	float: left;
+	.example-item{
+		@include span(3 of 15);
+		float: left;
+		img{
+			width: 100%;
+			border: 1px solid $c-black;
+		}
+		&.last{
+			@include span(3 of 15 last);
+		}
+	}
+	.more-link{
+		float: right;
+	}
+}
+
 .home-expierence{
 	margin-top: 60px;
+	float: left;
 	.platform-item{
 		@include span(4 of 12);
 		float: left;
@@ -33,12 +53,14 @@
 			@include span(4 of 12 last);
 		}
 	}
-	h3, h4{
+	h3, h5{
 		text-align: center;
 	}
-	h4{
+	h5{
 		font-weight: 200;
-		font-size: 24px;
+		font-size: 20px;
+		font-family: $f-stack-serif;
+		text-transform: none;
 	}
 	a{
 		display: block;

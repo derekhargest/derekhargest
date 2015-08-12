@@ -431,6 +431,47 @@ h3 {
   letter-spacing: 1.15px;
 }
 
+h4 {
+  font-family: "Oswald", sans-serif;
+  font-weight: 200;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+h5 {
+  font-family: "Oswald", sans-serif;
+  font-weight: 200;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+p, a {
+  letter-spacing: .75px;
+}
+
+a {
+  text-align: underline;
+  color: #333;
+  letter-spacing: .5px;
+}
+
+.subtitle {
+  text-align: right;
+  border-bottom: 1px solid #333;
+  margin-bottom: 40px;
+  font-size: 20px;
+  padding-bottom: 10px;
+  font-weight: 200;
+  text-transform: none;
+}
+
+.more-link {
+  letter-spacing: 0px;
+  font-weight: 200;
+  font-style: italic;
+  font-size: 1.25em;
+}
+
 .container {
   max-width: 1200px;
   margin-left: auto;
@@ -535,8 +576,32 @@ header {
   margin-top: 30px;
 }
 
+.home-examples {
+  margin: 90px 0px;
+  float: left;
+}
+.home-examples .example-item {
+  width: 18.91892%;
+  float: left;
+  margin-right: 1.35135%;
+  float: left;
+}
+.home-examples .example-item img {
+  width: 100%;
+  border: 1px solid #333;
+}
+.home-examples .example-item.last {
+  width: 18.91892%;
+  float: right;
+  margin-right: 0;
+}
+.home-examples .more-link {
+  float: right;
+}
+
 .home-expierence {
   margin-top: 60px;
+  float: left;
 }
 .home-expierence .platform-item {
   width: 32.20339%;
@@ -551,12 +616,14 @@ header {
   float: right;
   margin-right: 0;
 }
-.home-expierence h3, .home-expierence h4 {
+.home-expierence h3, .home-expierence h5 {
   text-align: center;
 }
-.home-expierence h4 {
+.home-expierence h5 {
   font-weight: 200;
-  font-size: 24px;
+  font-size: 20px;
+  font-family: "Vollkorn", serif;
+  text-transform: none;
 }
 .home-expierence a {
   display: block;
