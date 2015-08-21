@@ -9,7 +9,7 @@
 	</div>
 	
 	<div class="home-expierence">
-		<h4 class="subtitle">I've developed for:</h4>
+		<h4 class="subtitle"><span>I develop with:</span></h4>
 		<div class="platform-item">
 			<a href=""><i class="fa fa-shopping-cart"></i></a>
 			<h5>eCommerce Platforms</h5>

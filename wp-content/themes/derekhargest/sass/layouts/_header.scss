@@ -44,6 +44,7 @@ header{
 		letter-spacing: .85px;
 		line-height: 1.5em;
 		padding-top: 15px;
+		cursor: default;
 	}
 }
 
@@ -67,7 +68,10 @@ header{
 				text-decoration: none;
 				font-size: 18px;
 				-webkit-font-smoothing: antialiased;
-			}
+				position: relative;
+				display: block;
+				@include hover-ul(500ms);
 		}
 	}
+}
 }

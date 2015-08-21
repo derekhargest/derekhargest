@@ -2,12 +2,8 @@
 	
 }
 
-.page-title{
-	padding-top: 20px;
-}
-
 .page-content{
-	background: $c-light-gray;
+	background: $c-white;
 }
 
 .p-side{
@@ -18,42 +14,48 @@
 }
 
 .p-image{
-	@include span(5 of 15);
+	@include span(7 of 15);
 	img{
 		width: 100%;
 	}
 }
 
 .p-info{
-	@include span(7 of 15);
+	@include span(8 of 15 last);
 }
 
-.p-item{
+.p-info{
 	padding-top: 64px;
 	padding-bottom: 60px;
 	float: left;
 	h2{
 		margin-top: -8px;
-		font-family: $f-stack-serif;
+		font-family: $f-stack-sans;
 		font-size: 24px;
-		font-weight: 200;
+		font-weight: 400;
 		letter-spacing: 1.25px;
 	}
 	h3{
-		font-size: 16px;
+		font-size: 14px;
+		font-family: $f-stack-serif;
+		text-decoration: underline;
 		font-style: italic;
 	}
 	p{
-		font-size: 17px;
+		font-size: 14px;
 		letter-spacing: 1.5px;
 	}
 	ul{
 		padding-left: 0px;
 	}
 	li{
-		font-size: 15px;
+		font-size: 14px;
 		letter-spacing: 1.5px;
 		list-style: none;
 		padding-left: none;
+	}
+	hr{
+		margin-top: 90px;
+		margin-bottom: 30px;
 	}
 }

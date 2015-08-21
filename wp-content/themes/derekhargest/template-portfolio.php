@@ -6,39 +6,40 @@
 
 	<div class="container">
 		<div class="page-title">
-			<h1><?php the_title(); ?></h1>
+			<h1 class="subtitle"><span><?php the_title(); ?></span></h1>
 		</div>
 	</div>
+	
 	<div class="page-content">
-		<div class="container portfolio">
-			<div class="p-item">
-				<div class="p-side">
-					&nbsp;
-				</div>
-				<div class="p-image">
-					<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/logo-bead.jpg" alt="" />
-				</div>
-							<div class="p-side">
-				&nbsp;
-			</div>
-				<div class="p-info">
-					<h2>Beadaholique</h2>
-					<p>While working for Groove, created a custom Magento theme for a high volume client with over 30,000 skus. Developed numerous custom features to solve many problems.</p>
-					<h3>- Highlights</h3>
-					<ul>
-						<li>Created video product type using Youtube ID</li>
-						<li>Leveraged bundeled product type to sell project product</li>
-						<li>Mapped data architecture</li>
-					</ul>
-					<h3>- Roles</h3>
-					<ul>
-						<li>Front End Developer on project</li>
-					</ul>
-				</div>
-			<div class="p-side last">
-				&nbsp;
-			</div>
-			</div>
+		
+				
+		<div class="container portfolio grid">
+			<?php
+			$args = array( 'post_type' => 'portfolio', 'posts_per_page' => 6);
+			$posts_array = get_posts( $args );
+		?>
+
+		<?php if ( $posts_array ): ?>
+			<?php foreach ($posts_array as $post): ?>
+				<div class="grid-item">
+						<a href="<?php the_permalink(); ?>">
+							<img src="<?php echo get_field( "main_thumbnail" ); ?>" />
+							<div class="grid-overlay">
+								<div class="overlay-content">
+									<i class="fa <?php echo get_field( "fa_icon" ); ?>"></i>
+									<h3><?php the_title(); ?></h3>
+									<p>Something</p>
+								</div>
+							</div>
+						</a>
+					</div>
+				
+			<?php endforeach; ?>
+		
+		<?php wp_reset_postdata(); ?>
+		
+		<?php endif; ?>
+
 		</div>
 	</div>
 <?php endwhile; else : ?>

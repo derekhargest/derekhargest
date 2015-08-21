@@ -49,13 +49,30 @@ a{
 }
 
 .subtitle{
-	text-align: right;
-	border-bottom: 1px solid $c-black;
+	text-align: center;
 	margin-bottom: 40px;
 	font-size: 20px;
 	padding-bottom: 10px;
 	font-weight: 200;
 	text-transform: none;
+	&:before{
+		content: "";
+		height: 4px;
+		width: 100%;
+		border-bottom: 1px solid $c-black;
+		display: block;
+		position: relative;
+		top: 1em;
+		z-index: 5;
+	}
+	span{
+		width: auto;
+		display: inline-block;
+		background: $c-white;
+		position: relative;
+		z-index: 10;
+		padding: 0 1em;
+	}
 }
 
 .more-link{
@@ -66,8 +83,52 @@ a{
 }
 
 .page-title h1{
-	font-family: $f-stack-serif;
-	font-style: italic;
-	font-size: 48px;
+	font-size: 16px;
 	font-weight: 200;
+	padding-bottom: 0px;
+	margin-bottom: 0px;
+	margin-top: 60px;
+	font-family: $f-stack-serif;
+	text-align: left;
+	letter-spacing: .75px;
+	cursor: default;
+	span{
+		padding-left: 0px;
+	}
+	&:before{
+		top: .9em;
+	}
+}
+
+@font-face {
+	font-family: 'baltimore';
+	src:url('sass/fonts/baltimore.eot?-v76ie4');
+	src:url('sass/fonts/baltimore.eot?#iefix-v76ie4') format('embedded-opentype'),
+		url('sass/fonts/baltimore.ttf?-v76ie4') format('truetype'),
+		url('sass/fonts/baltimore.woff?-v76ie4') format('woff'),
+		url('sass/fonts/baltimore.svg?-v76ie4#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+	font-family: 'baltimore';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.icon-baltimore:before {
+	content: "\e600";
+}
+
+.icon-baltimore{
+	font-size: 50px;
 }

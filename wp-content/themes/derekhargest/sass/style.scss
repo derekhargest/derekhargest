@@ -5,6 +5,8 @@
 
 @import "theme_info";
 
+@import "mixins/hover-ul";
+
 // Screen
 // ======
 
@@ -20,5 +22,11 @@
 @import "layouts/base";
 
 @import "layouts/header";
+@import "layouts/footer";
 @import "layouts/home";
 @import "layouts/page";
+
+// Modules
+
+@import "modules/portfolio_grid";
+

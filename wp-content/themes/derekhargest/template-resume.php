@@ -6,7 +6,7 @@
 
 	<div class="container">
 		<div class="page-title">
-			<h1><?php the_title(); ?></h1>
+			<h1 class="subtitle"><span><?php the_title(); ?></span></h1>
 		</div>
 	</div>
 	<div class="page-content">

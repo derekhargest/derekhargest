@@ -1,0 +1,11 @@
+@mixin hover-ul($delay) {
+	border-bottom: 1px solid rgba(192, 192, 192, 0);
+	 -webkit-transition: border $delay ease;
+	  -moz-transition: border $delay ease;
+	  -ms-transition: border $delay ease;
+	  -o-transition: border $delay ease;
+	  transition: border $delay ease;
+	  &:hover{
+	  	border-bottom: 1px solid rgba(192, 192, 192, 1);
+	}
+}

@@ -460,13 +460,30 @@ a {
 }
 
 .subtitle {
-  text-align: right;
-  border-bottom: 1px solid #333;
+  text-align: center;
   margin-bottom: 40px;
   font-size: 20px;
   padding-bottom: 10px;
   font-weight: 200;
   text-transform: none;
+}
+.subtitle:before {
+  content: "";
+  height: 4px;
+  width: 100%;
+  border-bottom: 1px solid #333;
+  display: block;
+  position: relative;
+  top: 1em;
+  z-index: 5;
+}
+.subtitle span {
+  width: auto;
+  display: inline-block;
+  background: #FFF;
+  position: relative;
+  z-index: 10;
+  padding: 0 1em;
 }
 
 .more-link {
@@ -477,10 +494,49 @@ a {
 }
 
 .page-title h1 {
-  font-family: "Vollkorn", serif;
-  font-style: italic;
-  font-size: 48px;
+  font-size: 16px;
   font-weight: 200;
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+  margin-top: 60px;
+  font-family: "Vollkorn", serif;
+  text-align: left;
+  letter-spacing: .75px;
+  cursor: default;
+}
+.page-title h1 span {
+  padding-left: 0px;
+}
+.page-title h1:before {
+  top: .9em;
+}
+
+@font-face {
+  font-family: 'baltimore';
+  src: url("sass/fonts/baltimore.eot?-v76ie4");
+  src: url("sass/fonts/baltimore.eot?#iefix-v76ie4") format("embedded-opentype"), url("sass/fonts/baltimore.ttf?-v76ie4") format("truetype"), url("sass/fonts/baltimore.woff?-v76ie4") format("woff"), url("sass/fonts/baltimore.svg?-v76ie4#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+[class^="icon-"], [class*=" icon-"] {
+  font-family: 'baltimore';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-baltimore:before {
+  content: "\e600";
+}
+
+.icon-baltimore {
+  font-size: 50px;
 }
 
 .container {
@@ -541,6 +597,7 @@ header {
   letter-spacing: .85px;
   line-height: 1.5em;
   padding-top: 15px;
+  cursor: default;
 }
 
 .main-navigation {
@@ -566,6 +623,71 @@ header {
   text-decoration: none;
   font-size: 18px;
   -webkit-font-smoothing: antialiased;
+  position: relative;
+  display: block;
+  border-bottom: 1px solid rgba(192, 192, 192, 0);
+  -webkit-transition: border 500ms ease;
+  -moz-transition: border 500ms ease;
+  -ms-transition: border 500ms ease;
+  -o-transition: border 500ms ease;
+  transition: border 500ms ease;
+}
+.main-navigation ul li a:hover {
+  border-bottom: 1px solid silver;
+}
+
+.footer {
+  padding-top: 10px;
+  background: #000;
+  color: #FFF;
+  margin-top: 90px;
+}
+.footer .footer-info p {
+  text-align: center;
+  font-size: 12px;
+}
+.footer section {
+  width: 32.43243%;
+  float: left;
+  margin-right: 1.35135%;
+}
+.footer section:nth-child(3) {
+  width: 32.43243%;
+  float: right;
+  margin-right: 0;
+}
+.footer .footer-navigation ul {
+  text-align: center;
+  padding-left: 0px;
+  margin-bottom: 0px;
+  margin-top: 40px;
+}
+.footer .footer-navigation ul li {
+  list-style: none;
+  display: inline-block;
+  margin-right: 5px;
+}
+.footer .footer-navigation ul li a {
+  font-size: 14px;
+  text-decoration: none;
+  color: #FFF;
+  font-family: "Oswald", sans-serif;
+  font-weight: 200;
+  text-transform: uppercase;
+}
+.footer .footer-navigation ul li a:hover {
+  text-decoration: underline;
+}
+.footer .footer-social ul li {
+  list-style: none;
+  display: inline-block;
+  margin-right: 10px;
+}
+.footer .footer-social ul li i {
+  font-size: 26px;
+}
+.footer .footer-social ul li a {
+  color: #FFF;
 }
 
 .home-content {
@@ -637,7 +759,7 @@ header {
 }
 .home-expierence h5 {
   font-weight: 200;
-  font-size: 20px;
+  font-size: 18px;
   font-family: "Vollkorn", serif;
   text-transform: none;
 }
@@ -647,7 +769,7 @@ header {
   text-align: center;
 }
 .home-expierence i {
-  font-size: 135px;
+  font-size: 100px;
   color: #333;
 }
 .home-expierence p {
@@ -657,12 +779,8 @@ header {
   letter-spacing: .75px;
 }
 
-.page-title {
-  padding-top: 20px;
-}
-
 .page-content {
-  background: #E4E4E4;
+  background: #FFF;
 }
 
 .p-side {
@@ -677,7 +795,7 @@ header {
 }
 
 .p-image {
-  width: 32.43243%;
+  width: 45.94595%;
   float: left;
   margin-right: 1.35135%;
 }
@@ -686,37 +804,115 @@ header {
 }
 
 .p-info {
-  width: 45.94595%;
-  float: left;
-  margin-right: 1.35135%;
+  width: 52.7027%;
+  float: right;
+  margin-right: 0;
 }
 
-.p-item {
+.p-info {
   padding-top: 64px;
   padding-bottom: 60px;
   float: left;
 }
-.p-item h2 {
+.p-info h2 {
   margin-top: -8px;
-  font-family: "Vollkorn", serif;
+  font-family: "Oswald", sans-serif;
   font-size: 24px;
-  font-weight: 200;
+  font-weight: 400;
   letter-spacing: 1.25px;
 }
-.p-item h3 {
-  font-size: 16px;
+.p-info h3 {
+  font-size: 14px;
+  font-family: "Vollkorn", serif;
+  text-decoration: underline;
   font-style: italic;
 }
-.p-item p {
-  font-size: 17px;
+.p-info p {
+  font-size: 14px;
   letter-spacing: 1.5px;
 }
-.p-item ul {
+.p-info ul {
   padding-left: 0px;
 }
-.p-item li {
-  font-size: 15px;
+.p-info li {
+  font-size: 14px;
   letter-spacing: 1.5px;
   list-style: none;
   padding-left: none;
+}
+.p-info hr {
+  margin-top: 90px;
+  margin-bottom: 30px;
+}
+
+.portfolio.grid {
+  padding-top: 60px;
+}
+.portfolio.grid a {
+  float: left;
+  display: block;
+  margin-bottom: 18px;
+  position: relative;
+}
+.portfolio.grid .grid-item {
+  width: 32.43243%;
+  float: left;
+  margin-right: 1.35135%;
+  float: left;
+}
+.portfolio.grid .grid-item img {
+  width: 100%;
+}
+.portfolio.grid .grid-item:hover .grid-overlay {
+  opacity: 1;
+}
+.portfolio.grid .grid-item a {
+  width: 100%;
+}
+.portfolio.grid .grid-item:nth-child(3n+3) {
+  width: 32.43243%;
+  float: right;
+  margin-right: 0;
+}
+.portfolio.grid .grid-overlay {
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  background: url("images/bg-85-op-w.png");
+  height: 96%;
+  opacity: 0;
+  border-top: 3px solid #333;
+  transition: opacity 500ms ease-in-out;
+  -moz-transition: opacity 500ms ease-in-out;
+  -webkit-transition: opacity 500ms ease-in-out;
+}
+.portfolio.grid .grid-overlay h3 {
+  text-align: center;
+  color: #222;
+  padding-top: 5px;
+  margin-bottom: 5px;
+  margin-top: 15px;
+  font-size: 20px;
+}
+.portfolio.grid .grid-overlay p {
+  text-align: center;
+  color: #333;
+  margin-top: 5px;
+  font-size: 12px;
+}
+.portfolio.grid .grid-overlay i {
+  color: #333;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 20px;
+}
+.portfolio.grid .grid-overlay i:before {
+  padding: 0 10px 10px 10px;
+  border-bottom: 1px #333 solid;
+}
+.portfolio.grid .grid-overlay .overlay-content {
+  top: 26%;
+  position: absolute;
+  width: 100%;
 }

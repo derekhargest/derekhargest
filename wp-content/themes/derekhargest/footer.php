@@ -11,10 +11,30 @@
 ?>
 
 <?php wp_footer(); ?>
-<div class="footer">
-	<div class="container">
-		Created by: Derek Hargest
+<footer>
+	<div class="footer">
+		<div class="container">
+			<section class="footer-social">
+				<ul>
+					<li><a href=""><i class="fa fa-twitter"></i></a></li>
+					<li><a href=""><i class="fa fa-linkedin"></i></a></li>
+				</ul>
+			</section>
+			<section class="footer-navigation">
+				<ul>
+					<li><a href="#">Home</a></li>
+					<li><a href="#">About Me</a></li>
+					<li><a href="#">Portfolio</a></li>
+					<li><a href="#">Resume</a></li>
+				</ul>
+			</section>
+			<section class="footer-info">
+				<p>
+					Handcrafted in Baltimore, Maryland <span class="icon-baltimore"> </span>
+				</p>
+			</section>
+		</div>
 	</div>
-</div>
+</footer>
 </body>
 </html>
